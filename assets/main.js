@@ -1,7 +1,7 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* Mobile nav */
+  /* ── Mobile nav ── */
   const toggle = document.querySelector('.nav-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
   const mobileClose = document.querySelector('.mobile-close');
@@ -11,7 +11,21 @@ document.addEventListener('DOMContentLoaded', () => {
   mobileClose?.addEventListener('click', closeMenu);
   mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-  /* Generic slider factory */
+  /* ── Cart drawer ── */
+  const cartOverlay  = document.getElementById('cart-overlay');
+  const cartBtn      = document.getElementById('cart-btn');
+  const cartClose    = document.getElementById('cart-close-btn');
+  const cartBackdrop = document.getElementById('cart-backdrop');
+
+  const openCart  = () => { cartOverlay?.classList.add('open');  document.body.style.overflow='hidden'; };
+  const closeCart = () => { cartOverlay?.classList.remove('open'); document.body.style.overflow=''; };
+
+  cartBtn?.addEventListener('click', openCart);
+  cartClose?.addEventListener('click', closeCart);
+  cartBackdrop?.addEventListener('click', closeCart);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCart(); });
+
+  /* ── Generic slider factory ── */
   function makeSlider(trackSel, dotsSel, arrowPrevSel, arrowNextSel) {
     const track = document.querySelector(trackSel);
     if (!track) return;
@@ -31,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   makeSlider('.hero-track', '.hero-dots', '.hero-arrow-prev', '.hero-arrow-next');
   makeSlider('.lifestyle-track', '.lifestyle-dots', '.lifestyle-arrow-prev', '.lifestyle-arrow-next');
 
-  /* FAQ */
+  /* ── FAQ ── */
   document.querySelectorAll('.faq-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const item = btn.closest('.faq-item');
@@ -41,13 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* Active nav */
+  /* ── Active nav ── */
   const page = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(a => {
     if (a.getAttribute('href') === page || (page === '' && a.getAttribute('href') === 'index.html')) a.classList.add('active');
   });
 
-  /* Scroll reveal */
+  /* ── Scroll reveal ── */
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
@@ -58,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  /* Contact form */
+  /* ── Contact form ── */
   document.getElementById('contact-form')?.addEventListener('submit', e => {
     e.preventDefault();
     e.target.style.opacity='.5'; e.target.style.pointerEvents='none';
