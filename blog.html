@@ -4,162 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Trunk to Gold (T2G)</title>
-  <meta name="description" content="T2G Blog — Stories, recipes, and tips about coconut products, health, and sustainable living.">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- HEADER -->
 <div id="topbar">
   <div class="container">
-    <strong>For bulk orders, contact us at +63 917 XXX XXXX or email trunk2gold@gmail.com</strong>
+    For bulk orders, contact us at +63 917 XXX XXXX or email <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a>
   </div>
 </div>
+
 <header id="header">
   <div class="container">
-    <div class="header-inner">
-      <a id="logo" href="index.html"><img src="assets/img/logo.png" alt="T2G Logo"></a>
-      <nav>
-        <ul class="nav-main">
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="export.html">Export</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li class="nav-cta"><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="nav-toggle"><span></span><span></span><span></span></button>
+    <div class="header-row">
+      <a id="logo" href="index.html"><img src="assets/img/logo.png" alt="Trunk to Gold"></a>
+      <div class="nav-spacer"></div>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="export.html">Export</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <nav class="mobile-menu">
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="export.html">Export</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 </header>
 
-<!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="page-hero-inner container">
-    <span>Stories &amp; Recipes</span>
+<div class="mobile-menu">
+  <button class="mobile-close" aria-label="Close menu">&#x2715;</button>
+  <nav>
+    <a href="about.html">About</a><a href="products.html">Products</a><a href="export.html">Export</a>
+    <a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Blog</span></div>
+    <span class="kicker">Articles</span>
     <h1>The T2G Blog</h1>
-    <p>Tips, recipes, and stories from our farm to your kitchen — coming soon.</p>
-    <div class="breadcrumb">
-      <a href="index.html">Home</a>
-      <span>›</span>
-      <span>Blog</span>
-    </div>
+    <p>Recipes, product guides, and stories from the farm. Coming soon.</p>
   </div>
 </div>
 
 <!-- COMING SOON -->
-<section class="section" style="background:var(--cream);min-height:50vh;display:flex;align-items:center;">
-  <div class="container">
-    <div class="text-center reveal">
-      <div style="font-size:4rem;margin-bottom:24px;">🥥</div>
-      <span class="section-label">Stay Tuned</span>
-      <h2 class="section-title">Blog Coming Soon</h2>
-      <div class="divider"></div>
-      <p class="section-desc" style="margin-bottom:32px;">
-        We're preparing articles, recipes, and insights about the wonders of the coconut palm, healthy living, and the T2G story. Check back soon — there's a lot to share!
-      </p>
-      <p style="color:var(--text-light);font-size:.9rem;margin-bottom:32px;">
-        Expect topics like: <em>How to Cook with Coconut Sugar</em>, <em>The Science Behind Low-GI Eating</em>, <em>Farm to Table: A Day on Our Plantation</em>, and more.
-      </p>
-      <a href="contact.html" class="btn btn-primary">Get Notified</a>
+<section class="section section-cream" style="min-height:40vh;display:flex;align-items:center;">
+  <div class="container" style="text-align:center;">
+    <div class="reveal">
+      <span class="kicker">Coming Soon</span>
+      <h2 style="font-size:1.9rem;font-weight:800;color:var(--text);margin:12px 0 16px;">We are working on it</h2>
+      <p style="color:var(--text-light);max-width:520px;margin:0 auto 28px;font-size:.97rem;">Articles on cooking with coconut sugar, the difference between VCO and regular coconut oil, a day on our farm, and more. Check back soon.</p>
+      <a href="contact.html" class="btn btn-outline-green">Get notified when we publish</a>
     </div>
   </div>
 </section>
 
-<!-- PLACEHOLDER BLOG CARDS (greyed out, coming soon) -->
-<section class="section" style="background:var(--white);">
+<!-- PLACEHOLDER CARDS (greyed out preview) -->
+<section class="section">
   <div class="container">
-    <div class="text-center reveal" style="margin-bottom:40px;">
-      <h3 style="color:var(--text-light);font-size:1.1rem;font-family:'Lato',sans-serif;font-weight:400;">A preview of what's coming…</h3>
+    <div class="sec-heading reveal">
+      <span class="kicker">A preview of what is coming</span>
     </div>
-    <div class="blog-grid" style="opacity:.4;pointer-events:none;">
+    <div class="blog-grid" style="opacity:.35;pointer-events:none;">
       <div class="blog-card">
-        <div class="blog-image img-placeholder"><span>Blog Image</span></div>
-        <div class="blog-info">
+        <div class="blog-img">Image placeholder</div>
+        <div class="blog-body">
           <span class="blog-cat">Recipes</span>
-          <h3>5 Ways to Use Coconut Sugar in Your Morning Routine</h3>
-          <p>Start your day right with the goodness of low-GI coconut sugar — from coffee to oatmeal.</p>
-          <span class="blog-date">Coming Soon</span>
+          <h3>Five ways to use coconut sugar in your morning routine</h3>
+          <p>From coffee to oatmeal, low-GI swaps that actually taste good.</p>
         </div>
       </div>
       <div class="blog-card">
-        <div class="blog-image img-placeholder"><span>Blog Image</span></div>
-        <div class="blog-info">
+        <div class="blog-img">Image placeholder</div>
+        <div class="blog-body">
           <span class="blog-cat">Health</span>
-          <h3>Understanding the Glycemic Index: Why It Matters for Your Diet</h3>
-          <p>A plain-language guide to GI, blood sugar, and why the type of sweetener you choose is important.</p>
-          <span class="blog-date">Coming Soon</span>
+          <h3>What the glycemic index actually means and why it matters</h3>
+          <p>A plain-language breakdown of GI, blood sugar, and why your sweetener choice is not trivial.</p>
         </div>
       </div>
       <div class="blog-card">
-        <div class="blog-image img-placeholder"><span>Blog Image</span></div>
-        <div class="blog-info">
+        <div class="blog-img">Image placeholder</div>
+        <div class="blog-body">
           <span class="blog-cat">Our Story</span>
-          <h3>A Day on the T2G Farm: From Trunk to Table</h3>
-          <p>Follow a coconut from our plantation in Northern Mindanao all the way to your kitchen shelf.</p>
-          <span class="blog-date">Coming Soon</span>
+          <h3>A day on the T2G farm: from tree to table</h3>
+          <p>What actually happens between the coconut palm and the jar on your shelf.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer-main">
+<footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/img/logo.png" alt="T2G Logo">
-        <p>Trunk to Gold (T2G) produces premium, all-natural coconut-derived products from the heart of the Philippines.</p>
+      <div class="footer-brand"><img src="assets/img/logo.png" alt="T2G">
+        <p>Trunk to Gold produces premium, all-natural coconut products from Cagayan de Oro, Northern Mindanao.</p>
       </div>
-      <div class="footer-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="export.html">Export</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="products.html">Coco Sugar</a></li>
-          <li><a href="products.html">Coco Syrup</a></li>
-          <li><a href="products.html">Virgin Coco Oil</a></li>
-          <li><a href="products.html">Coco Vinegar</a></li>
-          <li><a href="products.html">Coco Jam</a></li>
-          <li><a href="products.html">View All</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <address>
-          Cagayan de Oro City,<br>
-          Northern Mindanao,<br>
-          Philippines<br><br>
-          trunk2gold@gmail.com<br>
-          +63 917 XXX XXXX
-        </address>
-      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul>
+        <li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li>
+        <li><a href="export.html">Export</a></li><li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Products</h4><ul>
+        <li><a href="products.html#coco-sugar">Coco Sugar</a></li><li><a href="products.html#coco-syrup">Coco Syrup</a></li>
+        <li><a href="products.html#virgin-coco-oil">Virgin Coco Oil</a></li><li><a href="products.html">View all</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact</h4><address>
+        Cagayan de Oro City<br>Northern Mindanao, Philippines<br><br>
+        <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a><br>+63 917 XXX XXXX
+      </address></div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Trunk to Gold (T2G). All rights reserved.</span>
-      <span>Made with 🥥 in the Philippines</span>
+      <span>&copy; 2025 Trunk to Gold (T2G). All rights reserved.</span>
+      <span>Made in the Philippines</span>
     </div>
   </div>
 </footer>

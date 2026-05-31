@@ -4,294 +4,228 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home — Trunk to Gold (T2G)</title>
-  <meta name="description" content="T2G — Trunk to Gold. Premium, all-natural coconut-derived products from the heart of the Philippines.">
+  <meta name="description" content="T2G — Trunk to Gold. Premium, all-natural coconut products from Cagayan de Oro, Northern Mindanao, Philippines.">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- HEADER -->
 <div id="topbar">
   <div class="container">
-    <strong>For bulk orders, contact us at +63 917 XXX XXXX or email trunk2gold@gmail.com</strong>
+    For bulk orders, contact us at +63 917 XXX XXXX or email <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a>
   </div>
 </div>
+
 <header id="header">
   <div class="container">
-    <div class="header-inner">
+    <div class="header-row">
       <a id="logo" href="index.html" aria-label="T2G Home">
-        <img src="assets/img/logo.png" alt="Trunk to Gold T2G Logo">
+        <img src="assets/img/logo.png" alt="Trunk to Gold">
       </a>
-      <nav>
-        <ul class="nav-main">
-          <li><a href="about.html">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="export.html">Export</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="nav-cta"><a href="contact.html">Contact</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
+      <div class="nav-spacer"></div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="export.html">Export</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
-  <nav class="mobile-menu">
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="export.html">Export</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 </header>
 
-<!-- HERO SLIDER -->
+<div class="mobile-menu" aria-label="Mobile navigation">
+  <button class="mobile-close" aria-label="Close menu">&#x2715;</button>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="export.html">Export</a>
+    <a href="faq.html">FAQ</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+<!-- HERO: full-width product banner image -->
 <section class="hero">
-  <div class="hero-slide active" style="background:#c8a45a;">
-    <div style="position:absolute;inset:0;background:linear-gradient(135deg,#4A2C0A 0%,#7A4F1A 40%,#c8a45a 100%);"></div>
-  </div>
-  <div class="hero-slide" style="background:#3B7A2A;">
-    <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1A3D10 0%,#3B7A2A 50%,#5BA042 100%);"></div>
-  </div>
-  <div class="hero-slide" style="background:#8B6914;">
-    <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1A0F00 0%,#4A2C0A 40%,#8B6914 100%);"></div>
-  </div>
-
-  <div class="hero-overlay"></div>
-
-  <div class="container" style="position:relative;z-index:2;padding-top:40px;padding-bottom:40px;">
-    <div class="hero-content">
-      <span class="hero-label">From Nature's Finest</span>
-      <h1 class="hero-title">From Trunk<br>to Gold</h1>
-      <p class="hero-desc">Premium, all-natural coconut-derived products harvested from our Philippine farms — bringing wholesome goodness straight to your table.</p>
-      <div class="hero-btns">
-        <a href="products.html" class="btn btn-gold">Explore Products</a>
-        <a href="about.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.6);color:#fff;">Our Story</a>
-      </div>
+  <div class="hero-img-wrap">
+    <div class="hero-img-placeholder">
+      <!-- Replace with: <img src="assets/img/hero-products.jpg" alt="T2G product lineup"> -->
+      <span>Product hero image placeholder (1400 x 500 px recommended)</span>
     </div>
-  </div>
-
-  <div class="hero-dots">
-    <button class="hero-dot active" aria-label="Slide 1"></button>
-    <button class="hero-dot" aria-label="Slide 2"></button>
-    <button class="hero-dot" aria-label="Slide 3"></button>
   </div>
 </section>
 
-<!-- ABOUT INTRO STRIP -->
-<section class="about-strip">
+<!-- THE COMPANY / ABOUT INTRO (matches reference layout) -->
+<section class="section">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-image img-placeholder">
-        <span>Farm Image Placeholder</span>
+    <div class="about-split reveal">
+      <div>
+        <h2>The Company</h2>
+        <a href="about.html" class="link-arrow" style="margin-top:14px;display:inline-flex;">Get in touch</a>
       </div>
-      <div class="about-text reveal">
-        <span class="section-label">Who We Are</span>
-        <h2>Rooted in the Philippine Coconut Heartland</h2>
-        <div class="divider divider-left"></div>
-        <p>T2G — Trunk to Gold is a passionate producer of premium coconut-based food products from Northern Mindanao. Every product we create starts at the source: our own coconut farms, where generations of knowledge meet modern food safety standards.</p>
-        <p>Our mission is simple — deliver the purest, healthiest coconut products to Filipino families and international markets alike, while supporting our local farming communities.</p>
-        <a href="about.html" class="btn btn-primary" style="margin-top:8px;">Learn More About Us</a>
+      <div>
+        <p>Trunk to Gold (T2G) is a Filipino producer based in Cagayan de Oro, Northern Mindanao, dedicated to bringing premium, all-natural coconut products to families and businesses around the world.</p>
+        <p>Our flagship product, T2G Coco Sugar, is made from fresh coconut sap with minimal processing, keeping its natural nutrients intact. It has grown into a trusted name among health-conscious consumers who care about what goes into their food.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- PRODUCTS PREVIEW -->
-<section class="section" style="background:var(--white);">
+<section class="section section-cream">
   <div class="container">
-    <div class="text-center reveal">
-      <span class="section-label">What We Offer</span>
-      <h2 class="section-title">Our Products</h2>
-      <div class="divider"></div>
-      <p class="section-desc">From sugar to syrup, vinegar to oil — everything we make starts with the humble coconut palm.</p>
+    <div class="sec-heading reveal">
+      <span class="kicker">What We Make</span>
+      <h2>Our Products</h2>
+      <p>Everything starts with the coconut palm. We do the rest with as little processing as possible.</p>
     </div>
-
     <div class="products-grid">
-      <!-- Product Card 1 -->
-      <div class="product-card reveal">
-        <div class="product-image img-placeholder" style="aspect-ratio:1;">
-          <span>Product Image</span>
+      <div class="product-card reveal" data-delay="0">
+        <div class="product-card-img">
+          <span class="product-card-badge">Flagship</span>
+          <span>Product image</span>
         </div>
-        <div class="product-info">
-          <span class="product-badge">Flagship</span>
+        <div class="product-card-body">
           <h3>Coco Sugar</h3>
-          <p>Low-GI coconut palm sugar. A 1:1 replacement for refined sugar in cooking, baking, and beverages.</p>
-          <a href="products.html" class="btn btn-primary" style="font-size:.82rem;padding:10px 22px;">View Details</a>
+          <p>Low-GI coconut palm sugar. Drops in as a 1:1 swap for white or brown sugar.</p>
+          <a href="products.html#coco-sugar" class="link-arrow">View details</a>
         </div>
       </div>
-      <!-- Product Card 2 -->
-      <div class="product-card reveal">
-        <div class="product-image img-placeholder" style="aspect-ratio:1;">
-          <span>Product Image</span>
-        </div>
-        <div class="product-info">
+      <div class="product-card reveal" data-delay="60">
+        <div class="product-card-img"><span>Product image</span></div>
+        <div class="product-card-body">
           <h3>Coco Syrup</h3>
-          <p>Rich, amber nectar from fresh coconut sap — a natural sweetener with a delicate caramel note.</p>
-          <a href="products.html" class="btn btn-primary" style="font-size:.82rem;padding:10px 22px;">View Details</a>
+          <p>Amber liquid sweetener from fresh coconut sap, with a mild caramel note.</p>
+          <a href="products.html#coco-syrup" class="link-arrow">View details</a>
         </div>
       </div>
-      <!-- Product Card 3 -->
-      <div class="product-card reveal">
-        <div class="product-image img-placeholder" style="aspect-ratio:1;">
-          <span>Product Image</span>
-        </div>
-        <div class="product-info">
+      <div class="product-card reveal" data-delay="120">
+        <div class="product-card-img"><span>Product image</span></div>
+        <div class="product-card-body">
           <h3>Virgin Coco Oil</h3>
-          <p>Cold-pressed from fresh coconut meat. Retains all the natural flavor, aroma, and nutrients.</p>
-          <a href="products.html" class="btn btn-primary" style="font-size:.82rem;padding:10px 22px;">View Details</a>
+          <p>Cold-pressed from fresh coconut meat. Full flavor, full nutrition, nothing stripped out.</p>
+          <a href="products.html#virgin-coco-oil" class="link-arrow">View details</a>
         </div>
       </div>
-      <!-- Product Card 4 -->
-      <div class="product-card reveal">
-        <div class="product-image img-placeholder" style="aspect-ratio:1;">
-          <span>Product Image</span>
-        </div>
-        <div class="product-info">
+      <div class="product-card reveal" data-delay="180">
+        <div class="product-card-img"><span>Product image</span></div>
+        <div class="product-card-body">
           <h3>Coco Vinegar</h3>
-          <p>Naturally fermented from coconut sap — mild, smooth, and packed with probiotic goodness.</p>
-          <a href="products.html" class="btn btn-primary" style="font-size:.82rem;padding:10px 22px;">View Details</a>
+          <p>Naturally fermented from coconut sap. Smooth and mildly probiotic.</p>
+          <a href="products.html#coco-vinegar" class="link-arrow">View details</a>
         </div>
       </div>
     </div>
-
-    <div class="text-center" style="margin-top:40px;">
-      <a href="products.html" class="btn btn-outline">View All Products</a>
+    <div style="margin-top:32px;" class="reveal">
+      <a href="products.html" class="btn btn-outline-green">See all products</a>
     </div>
   </div>
 </section>
 
-<!-- TAGLINE BANNER -->
-<div class="tagline-banner">
-  <h2><em>"Only the finest, all-natural products — from our trunk to your table."</em></h2>
-</div>
-
-<!-- WHY T2G -->
-<section class="section" style="background:var(--cream);">
+<!-- IMAGE + TEXT: Farm story -->
+<section class="section">
   <div class="container">
-    <div class="text-center reveal">
-      <span class="section-label">Our Promise</span>
-      <h2 class="section-title">Why Choose T2G?</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card reveal">
-        <div class="feature-icon">🌴</div>
-        <h3>Farm-to-Table</h3>
-        <p>We own our coconut farms and control every step of production — from harvest to packaging — ensuring the freshest, most consistent quality.</p>
+    <div class="img-text-split reveal">
+      <div class="split-img">
+        <div class="img-ph">Farm / plantation photo placeholder</div>
       </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">🌿</div>
-        <h3>100% All-Natural</h3>
-        <p>No artificial additives, no preservatives. Our products are minimally processed to retain the full spectrum of natural nutrients and flavors.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">🏅</div>
-        <h3>Quality Certified</h3>
-        <p>Regular testing by internationally accredited laboratories. ISO-certified packaging. We meet the highest global food safety standards.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">🚢</div>
-        <h3>Export-Ready</h3>
-        <p>Experienced exporter to Asia, the Middle East, Europe, the US, and Canada. Private label and custom packaging available on request.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">🤝</div>
-        <h3>Farmer-First</h3>
-        <p>We work directly with local coconut farmers, ensuring fair compensation and sustainable livelihoods across Northern Mindanao.</p>
-      </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon">💛</div>
-        <h3>Low Glycemic</h3>
-        <p>Our coconut sugar and syrup carry a low GI of 35 — a smarter, healthier alternative for diabetics and the health-conscious.</p>
+      <div class="split-text">
+        <span class="kicker">From Our Farms</span>
+        <h2>We own the whole process, start to finish</h2>
+        <p>Our coconut plantations are in Northern Mindanao, one of the Philippines' richest coconut-growing regions. We handle everything from harvest to packaging in-house, which keeps quality consistent and traceable from the tree to the shelf.</p>
+        <p>It also means we work directly with the farmers and communities who make this possible, paying fair rates and investing in the people behind every jar.</p>
+        <a href="about.html" class="btn btn-green">About T2G</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STATS BAR -->
-<div class="stats-bar">
+<!-- STATS -->
+<section class="section-sm section-cream">
   <div class="container">
-    <div class="stats-grid">
-      <div class="reveal">
+    <div class="stats-row reveal">
+      <div class="stat-item">
         <span class="stat-num">15+</span>
-        <span class="stat-label">Years of Experience</span>
+        <span class="stat-label">Years of operation</span>
       </div>
-      <div class="reveal">
+      <div class="stat-item">
         <span class="stat-num">8+</span>
-        <span class="stat-label">Product Lines</span>
+        <span class="stat-label">Product lines</span>
       </div>
-      <div class="reveal">
+      <div class="stat-item">
         <span class="stat-num">10+</span>
-        <span class="stat-label">Export Markets</span>
+        <span class="stat-label">Export markets</span>
       </div>
-      <div class="reveal">
+      <div class="stat-item">
         <span class="stat-num">GI 35</span>
-        <span class="stat-label">Low Glycemic Index</span>
+        <span class="stat-label">Low glycemic index</span>
       </div>
     </div>
   </div>
+</section>
+
+<!-- PULLQUOTE -->
+<div class="pullquote">
+  <blockquote class="reveal">"Only the finest, all-natural products from our trunk to your table."</blockquote>
 </div>
+
+<!-- IMAGE + TEXT: Export -->
+<section class="section">
+  <div class="container">
+    <div class="img-text-split flip reveal">
+      <div class="split-img">
+        <div class="img-ph">Export / shipping photo placeholder</div>
+      </div>
+      <div class="split-text">
+        <span class="kicker">Going Global</span>
+        <h2>Export-ready and shipping worldwide</h2>
+        <p>T2G products meet international food safety requirements and we have years of experience getting orders to buyers across Asia, the Middle East, Europe, and North America on time and in good shape.</p>
+        <p>Free product samples available. Private label open for discussion.</p>
+        <a href="export.html" class="btn btn-green">Export details</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- CERTIFICATIONS -->
-<section class="section-sm" style="background:var(--white);">
+<section class="section-sm section-cream">
   <div class="container">
-    <div class="text-center reveal" style="margin-bottom:32px;">
-      <span class="section-label">Standards We Keep</span>
-      <h2 class="section-title">Certifications &amp; Testing</h2>
-      <div class="divider"></div>
+    <div class="sec-heading center reveal">
+      <span class="kicker">Standards</span>
+      <h2>Tested and certified</h2>
     </div>
-    <div class="certs-grid">
-      <div class="cert-item reveal">
-        <div class="icon">🔬</div>
+    <div class="certs-row">
+      <div class="cert-card reveal" data-delay="0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         <p>Intertek Tested</p>
       </div>
-      <div class="cert-item reveal">
-        <div class="icon">✅</div>
+      <div class="cert-card reveal" data-delay="60">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
         <p>SGS Accredited</p>
       </div>
-      <div class="cert-item reveal">
-        <div class="icon">📦</div>
-        <p>ISO Packaging</p>
+      <div class="cert-card reveal" data-delay="120">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4a1 1 0 011 1v9a1 1 0 01-1 1H5a1 1 0 01-1-1v-2"/></svg>
+        <p>ISO-Certified Packaging</p>
       </div>
-      <div class="cert-item reveal">
-        <div class="icon">🌱</div>
+      <div class="cert-card reveal" data-delay="180">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z"/><path d="M11 8h2v8h-2zM7 8h2v8H7zM15 8h2v8h-2z" style="display:none"/></svg>
         <p>All-Natural Ingredients</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT REVERSE -->
-<section class="about-strip" style="background:var(--cream-dark);">
-  <div class="container">
-    <div class="about-grid reverse">
-      <div class="about-text reveal">
-        <span class="section-label">Going Global</span>
-        <h2>Ready for the World Market</h2>
-        <div class="divider divider-left"></div>
-        <p>T2G products are export-ready and fully compliant with international food safety standards. We ship to buyers across Asia, the Middle East, Europe, North America, and beyond.</p>
-        <p>Interested in importing T2G products or exploring private label opportunities? We'd love to talk.</p>
-        <a href="export.html" class="btn btn-primary" style="margin-top:8px;">Export Information</a>
-      </div>
-      <div class="about-image img-placeholder">
-        <span>Export / Shipping Image Placeholder</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer-main">
+<footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="assets/img/logo.png" alt="T2G Logo">
-        <p>Trunk to Gold (T2G) produces premium, all-natural coconut-derived products from the heart of the Philippines — bringing the goodness of the coconut palm from trunk to your table.</p>
+        <img src="assets/img/logo.png" alt="T2G">
+        <p>Trunk to Gold produces premium, all-natural coconut products from Cagayan de Oro, Northern Mindanao. From our farms to your table.</p>
       </div>
       <div class="footer-col">
         <h4>Navigate</h4>
@@ -307,28 +241,27 @@
       <div class="footer-col">
         <h4>Products</h4>
         <ul>
-          <li><a href="products.html">Coco Sugar</a></li>
-          <li><a href="products.html">Coco Syrup</a></li>
-          <li><a href="products.html">Virgin Coco Oil</a></li>
-          <li><a href="products.html">Coco Vinegar</a></li>
-          <li><a href="products.html">Coco Jam</a></li>
-          <li><a href="products.html">View All</a></li>
+          <li><a href="products.html#coco-sugar">Coco Sugar</a></li>
+          <li><a href="products.html#coco-syrup">Coco Syrup</a></li>
+          <li><a href="products.html#virgin-coco-oil">Virgin Coco Oil</a></li>
+          <li><a href="products.html#coco-vinegar">Coco Vinegar</a></li>
+          <li><a href="products.html#coco-jam">Coco Jam</a></li>
+          <li><a href="products.html">View all</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <address>
-          Cagayan de Oro City,<br>
-          Northern Mindanao,<br>
-          Philippines<br><br>
-          trunk2gold@gmail.com<br>
+          Cagayan de Oro City<br>
+          Northern Mindanao, Philippines<br><br>
+          <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a><br>
           +63 917 XXX XXXX
         </address>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Trunk to Gold (T2G). All rights reserved.</span>
-      <span>Made with 🥥 in the Philippines</span>
+      <span>&copy; 2025 Trunk to Gold (T2G). All rights reserved.</span>
+      <span>Made in the Philippines</span>
     </div>
   </div>
 </footer>

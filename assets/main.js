@@ -1,60 +1,59 @@
-/* T2G — Trunk to Gold | Main JS */
+/* T2G main.js v2 */
+'use strict';
 
-/* Mobile menu */
 document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.querySelector('.nav-toggle');
-  const menu   = document.querySelector('.mobile-menu');
-  if (toggle && menu) {
-    toggle.addEventListener('click', () => menu.classList.toggle('open'));
-  }
 
-  /* Hero slider */
-  const slides = document.querySelectorAll('.hero-slide');
-  const dots   = document.querySelectorAll('.hero-dot');
-  if (slides.length > 1) {
-    let current = 0;
-    const go = (n) => {
-      slides[current].classList.remove('active');
-      dots[current]?.classList.remove('active');
-      current = (n + slides.length) % slides.length;
-      slides[current].classList.add('active');
-      dots[current]?.classList.add('active');
-    };
-    dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
-    setInterval(() => go(current + 1), 5000);
-  }
+  /* ── Mobile nav ── */
+  const toggle  = document.querySelector('.nav-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileClose = document.querySelector('.mobile-close');
 
-  /* FAQ Accordion */
-  document.querySelectorAll('.faq-question').forEach(btn => {
+  function openMenu()  { mobileMenu?.classList.add('open');  toggle?.classList.add('open');  document.body.style.overflow = 'hidden'; }
+  function closeMenu() { mobileMenu?.classList.remove('open'); toggle?.classList.remove('open'); document.body.style.overflow = ''; }
+
+  toggle?.addEventListener('click', () => mobileMenu?.classList.contains('open') ? closeMenu() : openMenu());
+  mobileClose?.addEventListener('click', closeMenu);
+  mobileMenu?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const item = btn.closest('.faq-item');
-      const wasOpen = item.classList.contains('open');
+      const isOpen = item.classList.contains('open');
       document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-      if (!wasOpen) item.classList.add('open');
+      if (!isOpen) item.classList.add('open');
     });
   });
 
-  /* Active nav link */
-  const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-main a, .mobile-menu a').forEach(a => {
-    if (a.getAttribute('href') === path) a.classList.add('active');
+  /* ── Active nav link ── */
+  const page = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === page || (page === '' && href === 'index.html') || (page === 'index.html' && href === 'index.html')) {
+      a.classList.add('active');
+    }
   });
 
-  /* Scroll reveal */
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'none';
-        observer.unobserve(e.target);
-      }
+  /* ── Scroll reveal ── */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (!e.isIntersecting) return;
+      const delay = e.target.dataset.delay || 0;
+      setTimeout(() => e.target.classList.add('visible'), Number(delay));
+      io.unobserve(e.target);
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.reveal').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(28px)';
-    el.style.transition = 'opacity .65s ease, transform .65s ease';
-    observer.observe(el);
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ── Contact form ── */
+  const form = document.getElementById('contact-form');
+  form?.addEventListener('submit', e => {
+    e.preventDefault();
+    form.style.opacity = '.5';
+    form.style.pointerEvents = 'none';
+    const msg = document.getElementById('form-msg');
+    if (msg) msg.style.display = 'block';
   });
+
 });
