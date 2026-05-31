@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Trunk to Gold (T2G)</title>
+  <meta name="description" content="Browse T2G's full range of premium coconut products — sugar, syrup, oil, vinegar, jam, and more.">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .product-detail-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      background: var(--white);
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--cream-dark);
+      box-shadow: var(--shadow);
+      margin-bottom: 40px;
+    }
+    .product-detail-card.reverse { direction: rtl; }
+    .product-detail-card.reverse > * { direction: ltr; }
+    .product-detail-image {
+      aspect-ratio: 1;
+      width: 100%;
+    }
+    .product-detail-info { padding: 40px 40px 40px 0; }
+    .product-detail-card.reverse .product-detail-info { padding: 40px 0 40px 40px; }
+    .product-detail-info h2 { font-size: 1.7rem; color: var(--brown); margin-bottom: 8px; }
+    .product-detail-info p  { color: var(--text-light); margin-bottom: 14px; }
+    .product-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; margin-top: 4px; }
+    .product-tag {
+      background: var(--cream);
+      color: var(--brown-mid);
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--cream-dark);
+    }
+    .product-uses { margin-top: 16px; }
+    .product-uses h4 { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--brown); margin-bottom: 8px; font-family: 'Lato', sans-serif; font-weight: 900; }
+    .product-uses ul { display: flex; flex-wrap: wrap; gap: 6px; }
+    .product-uses ul li {
+      background: rgba(59,122,42,.08);
+      color: var(--green);
+      font-size: .82rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+    .info-box {
+      background: var(--cream);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      font-size: .88rem;
+      color: var(--text-light);
+    }
+    .info-box strong { color: var(--brown); }
+    @media(max-width:700px){
+      .product-detail-card { grid-template-columns: 1fr; }
+      .product-detail-card.reverse { direction: ltr; }
+      .product-detail-info { padding: 24px !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="topbar">
+  <div class="container">
+    <strong>For bulk orders, contact us at +63 917 XXX XXXX or email trunk2gold@gmail.com</strong>
+  </div>
+</div>
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a id="logo" href="index.html"><img src="assets/img/logo.png" alt="T2G Logo"></a>
+      <nav>
+        <ul class="nav-main">
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="export.html">Export</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="nav-cta"><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </div>
+  <nav class="mobile-menu">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="export.html">Export</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner container">
+    <span>All-Natural Goodness</span>
+    <h1>Our Products</h1>
+    <p>From coconut palm to your pantry — each product is a testament to purity and care.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Products</span>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section-sm" style="background:var(--cream);text-align:center;">
+  <div class="container reveal">
+    <p style="max-width:680px;margin:0 auto;color:var(--text-light);font-size:1.05rem;">
+      At T2G, we transform the whole coconut palm into a range of premium food products.
+      Every product is minimally processed, free from artificial additives, and crafted to deliver
+      the best of what nature intended.
+    </p>
+
+    <div class="info-box" style="max-width:700px;margin:24px auto 0;text-align:left;">
+      <strong>💳 Payment:</strong> GCash and Cash on Pickup available.<br>
+      <strong>🚚 Delivery:</strong> You may arrange your own courier; delivery costs are covered by the buyer.
+      For export orders, see our <a href="export.html" style="color:var(--green);font-weight:700;">Export page</a>.
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS LIST -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+
+    <!-- Product 1: Coco Sugar -->
+    <div class="product-detail-card reveal" id="coco-sugar">
+      <div class="product-detail-image img-placeholder">
+        <span>Coco Sugar Product Image</span>
+      </div>
+      <div class="product-detail-info">
+        <span class="product-badge">Flagship Product</span>
+        <h2>Coco Sugar</h2>
+        <div class="product-tags">
+          <span class="product-tag">Low GI 35</span>
+          <span class="product-tag">All-Natural</span>
+          <span class="product-tag">Diabetic-Friendly</span>
+        </div>
+        <p>Our flagship Coco Sugar is made from fresh coconut sap, minimally processed to retain its natural minerals, vitamins, and amino acids. With a glycemic index of just 35, it's the smarter sweetener for everyday use.</p>
+        <p>Use it as a direct 1:1 replacement for white or brown sugar in cooking, baking, or to sweeten your coffee, tea, cereals, and more.</p>
+        <div class="product-uses">
+          <h4>Great For</h4>
+          <ul>
+            <li>Baking</li>
+            <li>Cooking</li>
+            <li>Coffee &amp; Tea</li>
+            <li>Cereals</li>
+            <li>Desserts</li>
+          </ul>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="contact.html" class="btn btn-primary">Inquire / Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2: Coco Syrup -->
+    <div class="product-detail-card reverse reveal" id="coco-syrup">
+      <div class="product-detail-image img-placeholder">
+        <span>Coco Syrup Product Image</span>
+      </div>
+      <div class="product-detail-info">
+        <h2>Coco Syrup</h2>
+        <div class="product-tags">
+          <span class="product-tag">Low GI</span>
+          <span class="product-tag">All-Natural</span>
+          <span class="product-tag">Liquid Sweetener</span>
+        </div>
+        <p>A rich, amber liquid sweetener extracted directly from fresh coconut sap. Our Coco Syrup has a subtle caramel note and is loaded with the natural minerals and vitamins of the coconut palm.</p>
+        <p>Perfect for drizzling over pancakes, waffles, oatmeal, or using as a natural sweetener in beverages and marinades.</p>
+        <div class="product-uses">
+          <h4>Great For</h4>
+          <ul>
+            <li>Pancakes &amp; Waffles</li>
+            <li>Beverages</li>
+            <li>Marinades</li>
+            <li>Oatmeal</li>
+            <li>Dressings</li>
+          </ul>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="contact.html" class="btn btn-primary">Inquire / Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3: Virgin Coco Oil -->
+    <div class="product-detail-card reveal" id="virgin-coco-oil">
+      <div class="product-detail-image img-placeholder">
+        <span>Virgin Coco Oil Product Image</span>
+      </div>
+      <div class="product-detail-info">
+        <h2>Virgin Coco Oil</h2>
+        <div class="product-tags">
+          <span class="product-tag">Cold-Pressed</span>
+          <span class="product-tag">Unrefined</span>
+          <span class="product-tag">Rich in MCTs</span>
+        </div>
+        <p>Extracted from fresh coconut meat through a cold-press or traditional fermentation process, our Virgin Coco Oil retains its natural aroma, flavor, and full nutritional profile — including beneficial medium-chain triglycerides (MCTs).</p>
+        <p>Unlike refined coconut oil, our VCO undergoes minimal processing with no solvents, bleaching, or deodorizing — giving you pure, unadulterated coconut goodness.</p>
+        <div class="product-uses">
+          <h4>Great For</h4>
+          <ul>
+            <li>Cooking &amp; Frying</li>
+            <li>Baking</li>
+            <li>Skin &amp; Hair Care</li>
+            <li>Bulletproof Coffee</li>
+            <li>Salad Dressings</li>
+          </ul>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="contact.html" class="btn btn-primary">Inquire / Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4: Coco Vinegar -->
+    <div class="product-detail-card reverse reveal" id="coco-vinegar">
+      <div class="product-detail-image img-placeholder">
+        <span>Coco Vinegar Product Image</span>
+      </div>
+      <div class="product-detail-info">
+        <h2>Coco Vinegar</h2>
+        <div class="product-tags">
+          <span class="product-tag">Naturally Fermented</span>
+          <span class="product-tag">Probiotic</span>
+          <span class="product-tag">All-Natural</span>
+        </div>
+        <p>Made from naturally fermented coconut sap, our Coco Vinegar is mild, smooth, and brimming with beneficial probiotic properties. A versatile pantry staple for the health-conscious kitchen.</p>
+        <p>Use it in salad dressings, pickling, marinades, or wherever you'd use regular vinegar — with the added benefit of coconut's natural goodness.</p>
+        <div class="product-uses">
+          <h4>Great For</h4>
+          <ul>
+            <li>Salad Dressings</li>
+            <li>Pickling</li>
+            <li>Marinades</li>
+            <li>Dipping Sauce</li>
+            <li>Cleaning</li>
+          </ul>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="contact.html" class="btn btn-primary">Inquire / Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 5: Coco Jam -->
+    <div class="product-detail-card reveal" id="coco-jam">
+      <div class="product-detail-image img-placeholder">
+        <span>Coco Jam Product Image</span>
+      </div>
+      <div class="product-detail-info">
+        <h2>Coco Jam</h2>
+        <div class="product-tags">
+          <span class="product-tag">Traditional</span>
+          <span class="product-tag">Spread</span>
+          <span class="product-tag">All-Natural</span>
+        </div>
+        <p>A beloved Philippine classic — our Coco Jam (Minatamis na Bao) is made from fresh coconut milk and coconut sugar, slow-cooked to a rich, caramel-brown spread. No artificial flavors. No preservatives.</p>
+        <p>Spread it on pandesal, toast, or use as a filling for pastries and desserts. Pure, indulgent, and naturally delicious.</p>
+        <div class="product-uses">
+          <h4>Great For</h4>
+          <ul>
+            <li>Bread &amp; Pandesal</li>
+            <li>Pastry Filling</li>
+            <li>Dessert Topping</li>
+            <li>Waffles</li>
+          </ul>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="contact.html" class="btn btn-primary">Inquire / Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 6: Coco Seasoning -->
+    <div class="product-detail-card reverse reveal" id="coco-seasoning">
+      <div class="product-detail-image img-placeholder">
+        <span>Coco Seasoning Product Image</span>
+      </div>
+      <div class="product-detail-info">
+        <h2>Coco Seasoning</h2>
+        <div class="product-tags">
+          <span class="product-tag">Flavor Enhancer</span>
+          <span class="product-tag">All-Natural</span>
+        </div>
+        <p>A natural coconut-based seasoning that adds depth and umami to any dish. Made from wholesome coconut ingredients without MSG or artificial flavor enhancers.</p>
+        <p>Use as a table condiment, marinade base, or cooking seasoning for meats, vegetables, and seafood.</p>
+        <div class="product-uses">
+          <h4>Great For</h4>
+          <ul>
+            <li>Meats &amp; Seafood</li>
+            <li>Vegetables</li>
+            <li>Marinades</li>
+            <li>Table Condiment</li>
+          </ul>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="contact.html" class="btn btn-primary">Inquire / Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 7: Coco Balsamic Vinegar -->
+    <div class="product-detail-card reveal" id="coco-balsamic">
+      <div class="product-detail-image img-placeholder">
+        <span>Coco Balsamic Vinegar Product Image</span>
+      </div>
+      <div class="product-detail-info">
+        <h2>Coco Balsamic Vinegar</h2>
+        <div class="product-tags">
+          <span class="product-tag">Aged</span>
+          <span class="product-tag">Premium</span>
+          <span class="product-tag">Artisanal</span>
+        </div>
+        <p>Our premium Coco Balsamic Vinegar is aged for a richer, more complex flavor — a uniquely Filipino take on a classic condiment. Deep, tangy, and slightly sweet with a beautiful dark hue.</p>
+        <p>Elevate your salads, glazes, reductions, and gourmet dishes with this artisanal coconut vinegar.</p>
+        <div class="product-uses">
+          <h4>Great For</h4>
+          <ul>
+            <li>Salad Dressings</li>
+            <li>Glazes &amp; Reductions</li>
+            <li>Cheese Pairings</li>
+            <li>Gourmet Dishes</li>
+          </ul>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="contact.html" class="btn btn-primary">Inquire / Order</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 8: Popcorn -->
+    <div class="product-detail-card reverse reveal" id="popcorn">
+      <div class="product-detail-image img-placeholder">
+        <span>Coco Popcorn Product Image</span>
+      </div>
+      <div class="product-detail-info">
+        <h2>Coco Popcorn</h2>
+        <div class="product-tags">
+          <span class="product-tag">Snack</span>
+          <span class="product-tag">All-Natural</span>
+          <span class="product-tag">Guilt-Free</span>
+        </div>
+        <p>A guilt-free snacking experience made with the wholesome goodness of coconut. Our Coco Popcorn is lightly sweetened with coconut sugar and cooked in virgin coconut oil — crunchy, natural, and delicious.</p>
+        <p>The perfect healthy snack for the whole family, available in multiple variants.</p>
+        <div class="product-uses">
+          <h4>Great For</h4>
+          <ul>
+            <li>Snacking</li>
+            <li>Movie Nights</li>
+            <li>Kids' Lunchbox</li>
+            <li>Gift Giving</li>
+          </ul>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="contact.html" class="btn btn-primary">Inquire / Order</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-main">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo.png" alt="T2G Logo">
+        <p>Trunk to Gold (T2G) produces premium, all-natural coconut-derived products from the heart of the Philippines.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="export.html">Export</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#coco-sugar">Coco Sugar</a></li>
+          <li><a href="#coco-syrup">Coco Syrup</a></li>
+          <li><a href="#virgin-coco-oil">Virgin Coco Oil</a></li>
+          <li><a href="#coco-vinegar">Coco Vinegar</a></li>
+          <li><a href="#coco-jam">Coco Jam</a></li>
+          <li><a href="#popcorn">Coco Popcorn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          Cagayan de Oro City,<br>
+          Northern Mindanao,<br>
+          Philippines<br><br>
+          trunk2gold@gmail.com<br>
+          +63 917 XXX XXXX
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Trunk to Gold (T2G). All rights reserved.</span>
+      <span>Made with 🥥 in the Philippines</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
