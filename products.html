@@ -4,18 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products — Trunk to Gold (T2G)</title>
-  <meta name="description" content="Browse T2G's full range: coco sugar, coco syrup, virgin coco oil, coco vinegar, coco jam, and more.">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <div id="topbar">
-  <div class="container">
-    For bulk orders, contact us at +63 917 XXX XXXX or email <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a>
-  </div>
+  For bulk orders of more than PHP 4,000, contact +63 917 XXX XXXX or email <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a>
 </div>
-
 <header id="header">
   <div class="container">
     <div class="header-row">
@@ -29,222 +25,151 @@
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <a href="cart.html" class="nav-cart" aria-label="Cart">
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+      </a>
       <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-
 <div class="mobile-menu">
-  <button class="mobile-close" aria-label="Close menu">&#x2715;</button>
+  <button class="mobile-close">&#x2715;</button>
   <nav>
     <a href="about.html">About</a><a href="products.html">Products</a><a href="export.html">Export</a>
     <a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
   </nav>
 </div>
 
-<div class="page-header">
+<!-- FLAGSHIP PRODUCT HERO (green bg, image left / text right) -->
+<section class="product-hero" id="coco-sugar">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Products</span></div>
-    <span class="kicker">What We Make</span>
-    <h1>Our Products</h1>
-    <p>Eight product lines, all starting from the same place: our coconut farms in Northern Mindanao.</p>
-  </div>
-</div>
-
-<!-- Ordering info strip -->
-<div style="background:var(--cream);border-bottom:1px solid var(--border);padding:18px 0;">
-  <div class="container" style="display:flex;gap:32px;flex-wrap:wrap;font-size:.875rem;color:var(--text-light);">
-    <span><strong style="color:var(--text);">Payment:</strong> GCash or Cash on Pickup</span>
-    <span><strong style="color:var(--text);">Delivery:</strong> Arrange your own courier; costs covered by buyer</span>
-    <span><strong style="color:var(--text);">Export orders:</strong> <a href="export.html" style="color:var(--green);font-weight:600;">See export page</a></span>
-  </div>
-</div>
-
-<section class="section">
-  <div class="container">
-
-    <!-- COCO SUGAR -->
-    <div class="product-detail reveal" id="coco-sugar">
-      <div class="pd-img">Product image placeholder<br><small style="display:block;margin-top:6px;font-size:.72rem;">(Coco Sugar)</small></div>
-      <div class="pd-info">
-        <span class="flag">Flagship</span>
-        <h2>Coco Sugar</h2>
-        <div class="pd-tags">
-          <span class="pd-tag">GI 35</span>
-          <span class="pd-tag">All-Natural</span>
-          <span class="pd-tag">Diabetic-Friendly</span>
-        </div>
-        <p>Made from fresh coconut sap, minimally processed to hold onto its natural minerals, vitamins, and amino acids. With a glycemic index of 35, it is a real, tested alternative to refined sugar, not just a label claim.</p>
-        <p>Drops in as a 1:1 replacement for white or brown sugar in baking, cooking, coffee, tea, cereals, and most things you would normally sweeten.</p>
-        <div class="pd-uses">
-          <h4>Works well in</h4>
-          <ul><li>Baking</li><li>Cooking</li><li>Coffee and tea</li><li>Cereals</li><li>Desserts</li></ul>
-        </div>
-        <div style="margin-top:22px;"><a href="contact.html" class="btn btn-green">Inquire or order</a></div>
+    <div class="product-hero-inner">
+      <div class="product-hero-img"><span>Coco Sugar product photo placeholder</span></div>
+      <div class="product-hero-text">
+        <span class="kicker">Flagship Product</span>
+        <h1>Coco Sugar</h1>
+        <p>Use as a 1:1 replacement for white or brown sugar in baking, cooking, or to sweeten coffee, tea, cereals, and more. Made from 100% fresh coconut sap. GI of 35.</p>
+        <a href="contact.html" class="btn btn-outline-white">Order Now</a>
       </div>
     </div>
-
-    <!-- COCO SYRUP -->
-    <div class="product-detail flip reveal" id="coco-syrup">
-      <div class="pd-img">Product image placeholder<br><small style="display:block;margin-top:6px;font-size:.72rem;">(Coco Syrup)</small></div>
-      <div class="pd-info">
-        <h2>Coco Syrup</h2>
-        <div class="pd-tags">
-          <span class="pd-tag">Low GI</span>
-          <span class="pd-tag">All-Natural</span>
-          <span class="pd-tag">Liquid Sweetener</span>
-        </div>
-        <p>Amber liquid extracted from fresh coconut sap, with a mild caramel note. Richer in flavor than refined syrups and lower on the glycemic index.</p>
-        <p>Good for drizzling over pancakes and waffles, stirring into drinks, or using as a natural sweetener wherever a syrup works.</p>
-        <div class="pd-uses">
-          <h4>Works well in</h4>
-          <ul><li>Pancakes and waffles</li><li>Beverages</li><li>Marinades</li><li>Oatmeal</li><li>Salad dressings</li></ul>
-        </div>
-        <div style="margin-top:22px;"><a href="contact.html" class="btn btn-green">Inquire or order</a></div>
-      </div>
-    </div>
-
-    <!-- VIRGIN COCO OIL -->
-    <div class="product-detail reveal" id="virgin-coco-oil">
-      <div class="pd-img">Product image placeholder<br><small style="display:block;margin-top:6px;font-size:.72rem;">(Virgin Coco Oil)</small></div>
-      <div class="pd-info">
-        <h2>Virgin Coco Oil</h2>
-        <div class="pd-tags">
-          <span class="pd-tag">Cold-Pressed</span>
-          <span class="pd-tag">Unrefined</span>
-          <span class="pd-tag">Rich in MCTs</span>
-        </div>
-        <p>Pressed from fresh coconut meat without refinement, bleaching, or deodorizing. The natural aroma, flavor, and full nutritional profile stay intact, including medium-chain triglycerides (MCTs).</p>
-        <p>This is different from regular coconut oil, which uses solvents and processing to maximize extraction at the cost of everything that makes coconut oil worth using.</p>
-        <div class="pd-uses">
-          <h4>Works well in</h4>
-          <ul><li>Cooking and frying</li><li>Baking</li><li>Coffee</li><li>Salad dressings</li><li>Skin and hair care</li></ul>
-        </div>
-        <div style="margin-top:22px;"><a href="contact.html" class="btn btn-green">Inquire or order</a></div>
-      </div>
-    </div>
-
-    <!-- COCO VINEGAR -->
-    <div class="product-detail flip reveal" id="coco-vinegar">
-      <div class="pd-img">Product image placeholder<br><small style="display:block;margin-top:6px;font-size:.72rem;">(Coco Vinegar)</small></div>
-      <div class="pd-info">
-        <h2>Coco Vinegar</h2>
-        <div class="pd-tags">
-          <span class="pd-tag">Naturally Fermented</span>
-          <span class="pd-tag">Probiotic</span>
-          <span class="pd-tag">All-Natural</span>
-        </div>
-        <p>Naturally fermented from coconut sap. Milder than cane vinegar, with a clean acidity and beneficial probiotic properties that come from the fermentation process rather than being added in.</p>
-        <p>Use it anywhere you would use regular vinegar, but with the added benefit of something that is actually good for you.</p>
-        <div class="pd-uses">
-          <h4>Works well in</h4>
-          <ul><li>Salad dressings</li><li>Pickling</li><li>Marinades</li><li>Dipping sauce</li></ul>
-        </div>
-        <div style="margin-top:22px;"><a href="contact.html" class="btn btn-green">Inquire or order</a></div>
-      </div>
-    </div>
-
-    <!-- COCO JAM -->
-    <div class="product-detail reveal" id="coco-jam">
-      <div class="pd-img">Product image placeholder<br><small style="display:block;margin-top:6px;font-size:.72rem;">(Coco Jam)</small></div>
-      <div class="pd-info">
-        <h2>Coco Jam</h2>
-        <div class="pd-tags">
-          <span class="pd-tag">Traditional</span>
-          <span class="pd-tag">Spread</span>
-          <span class="pd-tag">No Preservatives</span>
-        </div>
-        <p>Slow-cooked from fresh coconut milk and coconut sugar until it becomes a rich, dark spread. No artificial flavors, no preservatives. The Filipino pantry classic, made properly.</p>
-        <p>Spread on pandesal or toast, use as a pastry filling, or eat it with a spoon. No judgment.</p>
-        <div class="pd-uses">
-          <h4>Works well in</h4>
-          <ul><li>Bread and pandesal</li><li>Pastry fillings</li><li>Dessert toppings</li><li>Waffles</li></ul>
-        </div>
-        <div style="margin-top:22px;"><a href="contact.html" class="btn btn-green">Inquire or order</a></div>
-      </div>
-    </div>
-
-    <!-- COCO SEASONING -->
-    <div class="product-detail flip reveal" id="coco-seasoning">
-      <div class="pd-img">Product image placeholder<br><small style="display:block;margin-top:6px;font-size:.72rem;">(Coco Seasoning)</small></div>
-      <div class="pd-info">
-        <h2>Coco Seasoning</h2>
-        <div class="pd-tags">
-          <span class="pd-tag">All-Natural</span>
-          <span class="pd-tag">No MSG</span>
-        </div>
-        <p>A coconut-based seasoning that adds depth to meat, seafood, and vegetables without MSG or synthetic flavor enhancers. The base flavors come from real coconut ingredients.</p>
-        <div class="pd-uses">
-          <h4>Works well in</h4>
-          <ul><li>Meats and seafood</li><li>Vegetables</li><li>Marinades</li><li>Table condiment</li></ul>
-        </div>
-        <div style="margin-top:22px;"><a href="contact.html" class="btn btn-green">Inquire or order</a></div>
-      </div>
-    </div>
-
-    <!-- COCO BALSAMIC -->
-    <div class="product-detail reveal" id="coco-balsamic">
-      <div class="pd-img">Product image placeholder<br><small style="display:block;margin-top:6px;font-size:.72rem;">(Coco Balsamic Vinegar)</small></div>
-      <div class="pd-info">
-        <h2>Coco Balsamic Vinegar</h2>
-        <div class="pd-tags">
-          <span class="pd-tag">Aged</span>
-          <span class="pd-tag">Artisanal</span>
-        </div>
-        <p>Aged for a deeper, more complex flavor than regular coco vinegar. Dark, tangy, slightly sweet, and made entirely from coconut sap. A Philippines-grown take on a classic condiment.</p>
-        <div class="pd-uses">
-          <h4>Works well in</h4>
-          <ul><li>Salad dressings</li><li>Glazes and reductions</li><li>Cheese pairings</li><li>Gourmet dishes</li></ul>
-        </div>
-        <div style="margin-top:22px;"><a href="contact.html" class="btn btn-green">Inquire or order</a></div>
-      </div>
-    </div>
-
-    <!-- COCO POPCORN -->
-    <div class="product-detail flip reveal" id="popcorn">
-      <div class="pd-img">Product image placeholder<br><small style="display:block;margin-top:6px;font-size:.72rem;">(Coco Popcorn)</small></div>
-      <div class="pd-info">
-        <h2>Coco Popcorn</h2>
-        <div class="pd-tags">
-          <span class="pd-tag">Snack</span>
-          <span class="pd-tag">All-Natural</span>
-        </div>
-        <p>Popcorn cooked in virgin coconut oil and lightly sweetened with coconut sugar. Crunchy, clean, and available in multiple variants. A snack that is actually made from real ingredients.</p>
-        <div class="pd-uses">
-          <h4>Works well for</h4>
-          <ul><li>Everyday snacking</li><li>Kids' lunchboxes</li><li>Gift giving</li></ul>
-        </div>
-        <div style="margin-top:22px;"><a href="contact.html" class="btn btn-green">Inquire or order</a></div>
-      </div>
-    </div>
-
   </div>
 </section>
 
+<!-- PAYMENTS / SHIPMENT INFO STRIP -->
+<div class="product-info-strip">
+  <div class="container">
+    <div class="product-info-cols">
+      <div class="pi-col">
+        <div class="pi-icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        </div>
+        <div class="pi-text">
+          <h4>Payments</h4>
+          <p>GCash and Cash on Pickup</p>
+        </div>
+      </div>
+      <div class="pi-col">
+        <div class="pi-icon">
+          <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4a1 1 0 011 1v9a1 1 0 01-1 1H5a1 1 0 01-1-1v-2M16 8l2 5"/></svg>
+        </div>
+        <div class="pi-text">
+          <h4>Shipment</h4>
+          <p>Can't pick up your order? You can arrange your own delivery courier, with costs covered by you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FULL PRODUCT GRID -->
+<section style="background:var(--white);">
+  <div class="container">
+    <div class="products-store-grid">
+
+      <!-- Popcorn -->
+      <div class="store-card reveal" id="popcorn">
+        <div class="store-card-ph">Popcorn product image</div>
+        <h3>Popcorn</h3>
+        <p class="price">PHP 170.00</p>
+        <a href="contact.html" class="btn btn-green">Select Options</a>
+      </div>
+
+      <!-- Coco Balsamic Vinegar -->
+      <div class="store-card reveal" id="coco-balsamic" data-delay="60">
+        <div class="store-card-ph">Coco Balsamic Vinegar product image</div>
+        <h3>Coco Balsamic Vinegar</h3>
+        <p class="price">PHP 200.00</p>
+        <a href="contact.html" class="btn btn-green">Add to Cart</a>
+      </div>
+
+      <!-- Coco Vinegar -->
+      <div class="store-card reveal" data-delay="120">
+        <div class="store-card-ph">Coco Vinegar product image</div>
+        <h3>Coco Vinegar</h3>
+        <p class="price">PHP 165.00</p>
+        <a href="contact.html" class="btn btn-green">Add to Cart</a>
+      </div>
+
+      <!-- Coco Seasoning -->
+      <div class="store-card reveal" data-delay="0">
+        <div class="store-card-ph">Coco Seasoning product image</div>
+        <h3>Coco Seasoning</h3>
+        <p class="price">PHP 165.00</p>
+        <a href="contact.html" class="btn btn-green">Add to Cart</a>
+      </div>
+
+      <!-- Virgin Coco Oil -->
+      <div class="store-card reveal" id="virgin-coco-oil" data-delay="60">
+        <div class="store-card-ph">Virgin Coco Oil product image</div>
+        <h3>Virgin Coco Oil</h3>
+        <p class="price">PHP 198.00 – PHP 350.00</p>
+        <a href="contact.html" class="btn btn-green">Select Options</a>
+      </div>
+
+      <!-- Coco Syrup -->
+      <div class="store-card reveal" id="coco-syrup" data-delay="120">
+        <div class="store-card-ph">Coco Syrup product image</div>
+        <h3>Coco Syrup</h3>
+        <p class="price">PHP 165.00</p>
+        <a href="contact.html" class="btn btn-green">Add to Cart</a>
+      </div>
+
+      <!-- Coco Jam -->
+      <div class="store-card reveal" id="coco-jam" data-delay="0">
+        <div class="store-card-ph">Coco Jam product image</div>
+        <h3>Coco Jam</h3>
+        <p class="price">PHP 165.00</p>
+        <a href="contact.html" class="btn btn-green">Add to Cart</a>
+      </div>
+
+      <!-- Coco Sugar -->
+      <div class="store-card reveal" data-delay="60">
+        <div class="store-card-ph">Coco Sugar product image</div>
+        <h3>Coco Sugar</h3>
+        <p class="price">PHP 120.00 – PHP 400.00</p>
+        <a href="contact.html" class="btn btn-green">Select Options</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><img src="assets/img/logo.png" alt="T2G">
-        <p>Trunk to Gold produces premium, all-natural coconut products from Cagayan de Oro, Northern Mindanao.</p>
-      </div>
-      <div class="footer-col"><h4>Navigate</h4><ul>
+    <div class="footer-inner">
+      <div class="footer-brand"><img src="assets/img/logo.png" alt="T2G"></div>
+      <div class="footer-address">San Isidro, Jasaan<br>Misamis Oriental, Philippines</div>
+      <div class="footer-contact">trunk2gold@gmail.com<br>+63 917 XXX XXXX</div>
+      <div class="footer-nav-col"><ul>
         <li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li>
         <li><a href="export.html">Export</a></li><li><a href="faq.html">FAQ</a></li>
         <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
       </ul></div>
-      <div class="footer-col"><h4>Products</h4><ul>
-        <li><a href="#coco-sugar">Coco Sugar</a></li><li><a href="#coco-syrup">Coco Syrup</a></li>
-        <li><a href="#virgin-coco-oil">Virgin Coco Oil</a></li><li><a href="#coco-vinegar">Coco Vinegar</a></li>
-        <li><a href="#coco-jam">Coco Jam</a></li><li><a href="#popcorn">Coco Popcorn</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Contact</h4><address>
-        Cagayan de Oro City<br>Northern Mindanao, Philippines<br><br>
-        <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a><br>+63 917 XXX XXXX
-      </address></div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2025 Trunk to Gold (T2G). All rights reserved.</span>
-      <span>Made in the Philippines</span>
+      <span>&copy; T2G Trunk to Gold Copyright 2025</span>
+      <div class="footer-social"><a href="#">f</a><a href="#">ig</a><a href="#">tt</a></div>
     </div>
   </div>
 </footer>

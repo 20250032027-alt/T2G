@@ -4,18 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Trunk to Gold (T2G)</title>
-  <meta name="description" content="Learn about T2G — Trunk to Gold, a Filipino coconut products company from Cagayan de Oro, Northern Mindanao.">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <div id="topbar">
-  <div class="container">
-    For bulk orders, contact us at +63 917 XXX XXXX or email <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a>
-  </div>
+  For bulk orders of more than PHP 4,000, contact +63 917 XXX XXXX or email <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a>
 </div>
-
 <header id="header">
   <div class="container">
     <div class="header-row">
@@ -29,170 +25,118 @@
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <a href="cart.html" class="nav-cart" aria-label="Cart">
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+      </a>
       <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-
 <div class="mobile-menu">
-  <button class="mobile-close" aria-label="Close menu">&#x2715;</button>
+  <button class="mobile-close">&#x2715;</button>
   <nav>
     <a href="about.html">About</a><a href="products.html">Products</a><a href="export.html">Export</a>
     <a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
   </nav>
 </div>
 
-<!-- PAGE HEADER -->
-<div class="page-header">
-  <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>About</span></div>
-    <span class="kicker">Our Story</span>
-    <h1>About T2G</h1>
-    <p>A Filipino company with deep roots in the coconut-growing heartland of Northern Mindanao.</p>
-  </div>
+<!-- PRODUCT LINEUP BANNER (full-width image) -->
+<div style="width:100%;background:#e8ddd0;aspect-ratio:16/5;max-height:440px;overflow:hidden;display:flex;align-items:center;justify-content:center;color:#a09080;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;">
+  Full-width product lineup banner image placeholder (1400 x 440 px)
 </div>
 
 <!-- THE COMPANY -->
-<section class="section">
+<section style="background:var(--white);">
   <div class="container">
-    <div class="about-split reveal">
+    <div class="company-split reveal">
       <div>
         <h2>The Company</h2>
-        <a href="contact.html" class="link-arrow" style="margin-top:14px;display:inline-flex;">Get in touch</a>
+        <a href="contact.html" class="link-green">Get in Touch</a>
       </div>
       <div>
-        <p>Trunk to Gold (T2G) is based in Cagayan de Oro, Northern Mindanao, and has been producing premium coconut products since its founding. We are a producer first: we own our farms, run our own processing, and handle distribution ourselves. That full control is what lets us stand behind the quality of everything we make.</p>
-        <p>Our flagship product, T2G Coco Sugar, is made from fresh coconut sap that is minimally processed to preserve its natural minerals, vitamins, and amino acids. It has built a loyal following among health-conscious consumers and is now exported to buyers across Asia, the Middle East, Europe, and North America.</p>
+        <p>Founded in May 2017 by Gemma Dela Vega-Emata and fellow development workers in Jasaan, Misamis Oriental, Trunk to Gold Agribusiness started from a simple question: why is Misamis Oriental sitting on one of the Philippines' most abundant coconut regions, and yet all that comes out of it is copra and tuba?</p>
+        <p>The answer became T2G. We produce coconut sugar under the brand "Coco Rush," along with coco syrup, virgin coco oil, coco vinegar, coco jam, and more. Everything is made from coconut sap gathered by our partner tappers in the barangays of Balingasag, Claveria, and Jasaan, and processed at our mechanized facility in San Isidro.</p>
+        <p>The name says it all. Trunk, for the coconut palm. Gold, for what we believe it is worth when treated right.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PHOTO + TEXT: Farm -->
-<section class="section section-cream">
+<!-- MISSION & VISION (2x2 bento grid) -->
+<section class="mv-section">
   <div class="container">
-    <div class="img-text-split reveal">
-      <div class="split-img"><div class="img-ph">Farm / plantation photo placeholder</div></div>
-      <div class="split-text">
-        <span class="kicker">From the Source</span>
-        <h2>Rooted in Northern Mindanao</h2>
-        <p>Northern Mindanao is one of the Philippines' most productive coconut regions, and T2G is built on that foundation. Our plantations supply the raw material for every product we make, giving us direct oversight from tree to table.</p>
-        <p>We work with a small team of experienced agricultural staff and rely on centralized processing to keep quality consistent across every batch. Regular testing through internationally accredited labs (Intertek, SGS) backs up what we see on the ground.</p>
+    <h2 class="sec-title" style="margin-bottom:32px;">Our Mission &amp; Vision</h2>
+    <div class="mv-grid reveal">
+      <!-- Row 1 -->
+      <div class="mv-cell mv-cell-photo">
+        <div class="mv-ph">Photo placeholder — trade show / award</div>
+      </div>
+      <div class="mv-cell">
+        We are committed to supplying our customers with the finest food products produced in the Philippines — from our farms to your table.
+      </div>
+      <div class="mv-cell mv-cell-photo">
+        <div class="mv-ph">Photo placeholder — production worker</div>
+      </div>
+      <!-- Row 2 -->
+      <div class="mv-cell">
+        We strive to be a globally recognized company known for its world-class food selection, quality, and safety.
+      </div>
+      <div class="mv-cell mv-cell-photo">
+        <div class="mv-ph">Photo placeholder — coco sugar spoon</div>
+      </div>
+      <div class="mv-cell">
+        Through our work, we are committed to making a real difference in the lives of our partner coconut tappers, their families, and the communities of Misamis Oriental.
       </div>
     </div>
   </div>
 </section>
 
-<!-- MISSION / VISION as simple text block, not cards -->
-<section class="section">
+<!-- WHY T2G -->
+<section class="why-section">
   <div class="container">
-    <div style="max-width:760px;" class="reveal">
-      <span class="kicker">What Drives Us</span>
-      <h2 style="font-size:1.9rem;font-weight:800;color:var(--text);margin:12px 0 24px;">What we are here to do</h2>
-      <p style="color:var(--text-light);font-size:.97rem;margin-bottom:14px;">We supply customers with the finest all-natural coconut food products from the Philippines. That sentence does not change depending on the order size or the market. The standard stays the same whether we are filling a local wholesale order or shipping a pallet to Europe.</p>
-      <p style="color:var(--text-light);font-size:.97rem;margin-bottom:14px;">We want T2G to be a Philippine brand that is recognized internationally for quality, traceability, and honesty. Not a company that just puts "natural" on the label because it sells well, but one where the label is the least interesting part because the product speaks for itself.</p>
-      <p style="color:var(--text-light);font-size:.97rem;">And we are committed to doing this in a way that makes a real difference for the farmers and communities in Northern Mindanao who make it possible.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PHOTO + TEXT: Community -->
-<section class="section section-cream">
-  <div class="container">
-    <div class="img-text-split flip reveal">
-      <div class="split-img"><div class="img-ph">Community / team photo placeholder</div></div>
-      <div class="split-text">
-        <span class="kicker">People Behind It</span>
-        <h2>A company that actually pays its farmers fairly</h2>
-        <p>There is a lot of "farm-to-table" branding out there that does not survive a closer look. At T2G, the farms are ours. The farmers are people we know by name. We pay fair rates, maintain safe working conditions, and are invested in long-term relationships because our business only works if theirs does too.</p>
-        <p>When you buy T2G, you are supporting real livelihoods in Northern Mindanao, not just a label.</p>
-        <a href="contact.html" class="btn btn-green">Contact us</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY T2G: clean and factual, no inflated language -->
-<section class="section">
-  <div class="container">
-    <div class="sec-heading reveal">
-      <span class="kicker">Why T2G</span>
-      <h2>What makes us different</h2>
-    </div>
+    <h2 class="sec-title-white">Why T2G?</h2>
     <div class="why-grid">
       <div class="why-card reveal" data-delay="0">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <div class="why-card-img"><span>Why photo 1 — product/food</span></div>
+        <div class="why-card-body">
+          <h3>Our Experience</h3>
+          <p>T2G was built by development workers who came out of the cooperative sector and knew the farming communities firsthand. We were among the first to commercially produce coconut sugar in Misamis Oriental, and we have spent seven years refining the process from a wok on a stove to a fully mechanized facility.</p>
         </div>
-        <h3>Farm ownership</h3>
-        <p>We own our coconut plantations and run centralized processing. No third-party farms, no outsourced production, no guessing about what is in the supply chain.</p>
       </div>
-      <div class="why-card reveal" data-delay="60">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <div class="why-card reveal" data-delay="80">
+        <div class="why-card-img"><span>Why photo 2 — production</span></div>
+        <div class="why-card-body">
+          <h3>Our Quality</h3>
+          <p>The sap is tested before it enters production. The facility runs regular Good Manufacturing Practices training. Our packaging is ISO-certified. We are FDA Philippines-compliant. And we test with internationally accredited labs to make sure what is on the label matches what is in the product.</p>
         </div>
-        <h3>Lab-tested quality</h3>
-        <p>Every batch is tested by globally accredited labs including Intertek and SGS. We use ISO-certified packaging. The paperwork matches what is in the product.</p>
       </div>
-      <div class="why-card reveal" data-delay="120">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+      <div class="why-card reveal" data-delay="160">
+        <div class="why-card-img"><span>Why photo 3 — popcorn / product</span></div>
+        <div class="why-card-body">
+          <h3>Our Presence</h3>
+          <p>T2G products are available through select health food stores, restaurants, and cafes, and ship to institutional buyers nationwide. We are also experienced exporters to Asia, the Middle East, Europe, the United States, and Canada, with ambitions to grow that reach further.</p>
         </div>
-        <h3>Export experience</h3>
-        <p>We have shipped to buyers in Asia, the Middle East, Europe, and North America. We know the logistics, the documentation, and how to get things there in good shape.</p>
-      </div>
-      <div class="why-card reveal" data-delay="0">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-        </div>
-        <h3>Low glycemic index</h3>
-        <p>T2G Coco Sugar has a GI of 35. That is not a marketing claim; it is a tested figure. It makes a real difference for diabetics and anyone watching their blood sugar.</p>
-      </div>
-      <div class="why-card reveal" data-delay="60">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-        </div>
-        <h3>Fair to farmers</h3>
-        <p>We pay our farmers fairly because the alternative is a fragile supply chain built on underpaid labor, and that is not what T2G is about.</p>
-      </div>
-      <div class="why-card reveal" data-delay="120">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>No additives</h3>
-        <p>No artificial flavors, no preservatives, no colors. Minimal processing means the coconut does most of the work, and we just get out of the way.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/img/logo.png" alt="T2G">
-        <p>Trunk to Gold produces premium, all-natural coconut products from Cagayan de Oro, Northern Mindanao. From our farms to your table.</p>
-      </div>
-      <div class="footer-col"><h4>Navigate</h4><ul>
+    <div class="footer-inner">
+      <div class="footer-brand"><img src="assets/img/logo.png" alt="T2G"></div>
+      <div class="footer-address">San Isidro, Jasaan<br>Misamis Oriental, Philippines</div>
+      <div class="footer-contact">trunk2gold@gmail.com<br>+63 917 XXX XXXX</div>
+      <div class="footer-nav-col"><ul>
         <li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li>
         <li><a href="export.html">Export</a></li><li><a href="faq.html">FAQ</a></li>
         <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
       </ul></div>
-      <div class="footer-col"><h4>Products</h4><ul>
-        <li><a href="products.html#coco-sugar">Coco Sugar</a></li>
-        <li><a href="products.html#coco-syrup">Coco Syrup</a></li>
-        <li><a href="products.html#virgin-coco-oil">Virgin Coco Oil</a></li>
-        <li><a href="products.html#coco-vinegar">Coco Vinegar</a></li>
-        <li><a href="products.html">View all</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Contact</h4><address>
-        Cagayan de Oro City<br>Northern Mindanao, Philippines<br><br>
-        <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a><br>+63 917 XXX XXXX
-      </address></div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2025 Trunk to Gold (T2G). All rights reserved.</span>
-      <span>Made in the Philippines</span>
+      <span>&copy; T2G Trunk to Gold Copyright 2025</span>
+      <div class="footer-social"><a href="#">f</a><a href="#">ig</a><a href="#">tt</a></div>
     </div>
   </div>
 </footer>

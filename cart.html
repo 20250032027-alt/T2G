@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Trunk to Gold (T2G)</title>
+  <title>Cart — Trunk to Gold (T2G)</title>
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -23,9 +23,9 @@
         <a href="export.html">Export</a>
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <a href="cart.html" class="nav-cart" aria-label="Cart">
+      <a href="cart.html" class="nav-cart active" aria-label="Cart">
         <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
       </a>
       <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
@@ -40,48 +40,26 @@
   </nav>
 </div>
 
-<!-- CONTACT PAGE: dark top / green bottom with centered white card -->
-<div class="contact-page">
-  <div class="contact-bg-top"></div>
-  <div class="contact-bg-bottom"></div>
+<section class="section" style="background:var(--grey-bg);min-height:60vh;">
+  <div class="container" style="max-width:700px;">
+    <h1 style="font-size:1.5rem;font-weight:700;color:var(--text);margin-bottom:32px;">Your Cart</h1>
 
-  <div class="contact-card">
-    <!-- Left: info -->
-    <div class="contact-info">
-      <h2>Got a Question?</h2>
-      <p>
-        San Isidro, Jasaan<br>
-        Misamis Oriental, Philippines
-      </p>
-      <p>+63 917 XXX XXXX</p>
-      <p><a href="mailto:trunk2gold@gmail.com" style="color:var(--green);">trunk2gold@gmail.com</a></p>
+    <div id="cart-empty" style="text-align:center;padding:60px 0;">
+      <p style="font-size:1rem;color:var(--text-light);margin-bottom:24px;">Your cart is empty.</p>
+      <a href="products.html" class="btn btn-green">Browse Products</a>
     </div>
 
-    <!-- Right: form -->
-    <div class="contact-form-wrap">
-      <form id="contact-form" novalidate>
-        <div class="form-group">
-          <label for="name">Your name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Your email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject">
-        </div>
-        <div class="form-group">
-          <label for="message">Your message (optional)</label>
-          <textarea id="message" name="message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-green" style="width:100%;justify-content:center;padding:12px;">Submit</button>
-        <div class="form-success" id="form-msg">Message sent. We will be in touch soon.</div>
-      </form>
+    <div id="cart-items" style="display:none;">
+      <!-- Cart items rendered by JS -->
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:3px;padding:24px;margin-bottom:16px;">
+        <p style="font-size:.88rem;color:var(--text-light);">Cart functionality connects to your checkout backend. For now, orders can be placed via the <a href="contact.html" style="color:var(--green);">contact page</a>.</p>
+      </div>
+      <div style="text-align:right;margin-top:20px;">
+        <a href="contact.html" class="btn btn-green">Place Order via Contact</a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- FOOTER -->
 <footer class="footer">

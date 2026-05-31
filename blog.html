@@ -10,11 +10,8 @@
 <body>
 
 <div id="topbar">
-  <div class="container">
-    For bulk orders, contact us at +63 917 XXX XXXX or email <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a>
-  </div>
+  For bulk orders of more than PHP 4,000, contact +63 917 XXX XXXX or email <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a>
 </div>
-
 <header id="header">
   <div class="container">
     <div class="header-row">
@@ -28,98 +25,88 @@
         <a href="blog.html" class="active">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <a href="cart.html" class="nav-cart" aria-label="Cart">
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+      </a>
       <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-
 <div class="mobile-menu">
-  <button class="mobile-close" aria-label="Close menu">&#x2715;</button>
+  <button class="mobile-close">&#x2715;</button>
   <nav>
     <a href="about.html">About</a><a href="products.html">Products</a><a href="export.html">Export</a>
     <a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
   </nav>
 </div>
 
-<div class="page-header">
+<section class="blog-page">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Blog</span></div>
-    <span class="kicker">Articles</span>
-    <h1>The T2G Blog</h1>
-    <p>Recipes, product guides, and stories from the farm. Coming soon.</p>
-  </div>
-</div>
+    <h1 class="sec-title">Blog</h1>
+    <p class="sec-desc">Stay up to date with T2G. News, product updates, health tips, and stories from our farms and communities in Misamis Oriental.</p>
 
-<!-- COMING SOON -->
-<section class="section section-cream" style="min-height:40vh;display:flex;align-items:center;">
-  <div class="container" style="text-align:center;">
-    <div class="reveal">
-      <span class="kicker">Coming Soon</span>
-      <h2 style="font-size:1.9rem;font-weight:800;color:var(--text);margin:12px 0 16px;">We are working on it</h2>
-      <p style="color:var(--text-light);max-width:520px;margin:0 auto 28px;font-size:.97rem;">Articles on cooking with coconut sugar, the difference between VCO and regular coconut oil, a day on our farm, and more. Check back soon.</p>
-      <a href="contact.html" class="btn btn-outline-green">Get notified when we publish</a>
+    <div class="blog-grid">
+
+      <!-- Post 1 -->
+      <div class="blog-card reveal" data-delay="0">
+        <div class="blog-card-img"><span>Blog image placeholder</span></div>
+        <div class="blog-card-body">
+          <h3>T2G Breathes New Life into the Coconut Industry in Misamis Oriental</h3>
+          <span class="blog-date">April 3, 2024</span>
+          <p>From a wok on a stove to a mechanized facility in San Isidro, Jasaan — this is how T2G got here, and where it is going next.</p>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="blog-card reveal" data-delay="60">
+        <div class="blog-card-img"><span>Blog image placeholder</span></div>
+        <div class="blog-card-body">
+          <h3>Why Coconut Tappers in Balingasag Earn More Working with T2G</h3>
+          <span class="blog-date">Coming soon</span>
+          <p>Copra farming pays once a quarter. Coconut sap pays every week. We look at what that difference actually means for families in Misamis Oriental.</p>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="blog-card reveal" data-delay="120">
+        <div class="blog-card-img"><span>Blog image placeholder</span></div>
+        <div class="blog-card-body">
+          <h3>Coco Savor: T2G's New Seasoning Sauce is Headed to Market</h3>
+          <span class="blog-date">Coming soon</span>
+          <p>Low sodium, gluten-free, allergen-free, and made entirely from coconut sap. We worked with DOST-ITDI to develop it. Here is what it is and how it came together.</p>
+        </div>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="blog-card reveal" data-delay="0">
+        <div class="blog-card-img"><span>Blog image placeholder</span></div>
+        <div class="blog-card-body">
+          <h3>Bake Healthier with T2G Coco Sugar: Chocolate Chip Cookies</h3>
+          <span class="blog-date">Coming soon</span>
+          <p>A straightforward swap. Use T2G Coco Sugar in place of white sugar in any cookie recipe. Here is a version we actually made and ate.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- PLACEHOLDER CARDS (greyed out preview) -->
-<section class="section">
-  <div class="container">
-    <div class="sec-heading reveal">
-      <span class="kicker">A preview of what is coming</span>
-    </div>
-    <div class="blog-grid" style="opacity:.35;pointer-events:none;">
-      <div class="blog-card">
-        <div class="blog-img">Image placeholder</div>
-        <div class="blog-body">
-          <span class="blog-cat">Recipes</span>
-          <h3>Five ways to use coconut sugar in your morning routine</h3>
-          <p>From coffee to oatmeal, low-GI swaps that actually taste good.</p>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-img">Image placeholder</div>
-        <div class="blog-body">
-          <span class="blog-cat">Health</span>
-          <h3>What the glycemic index actually means and why it matters</h3>
-          <p>A plain-language breakdown of GI, blood sugar, and why your sweetener choice is not trivial.</p>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-img">Image placeholder</div>
-        <div class="blog-body">
-          <span class="blog-cat">Our Story</span>
-          <h3>A day on the T2G farm: from tree to table</h3>
-          <p>What actually happens between the coconut palm and the jar on your shelf.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><img src="assets/img/logo.png" alt="T2G">
-        <p>Trunk to Gold produces premium, all-natural coconut products from Cagayan de Oro, Northern Mindanao.</p>
-      </div>
-      <div class="footer-col"><h4>Navigate</h4><ul>
+    <div class="footer-inner">
+      <div class="footer-brand"><img src="assets/img/logo.png" alt="T2G"></div>
+      <div class="footer-address">San Isidro, Jasaan<br>Misamis Oriental, Philippines</div>
+      <div class="footer-contact">trunk2gold@gmail.com<br>+63 917 XXX XXXX</div>
+      <div class="footer-nav-col"><ul>
         <li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li>
         <li><a href="export.html">Export</a></li><li><a href="faq.html">FAQ</a></li>
         <li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
       </ul></div>
-      <div class="footer-col"><h4>Products</h4><ul>
-        <li><a href="products.html#coco-sugar">Coco Sugar</a></li><li><a href="products.html#coco-syrup">Coco Syrup</a></li>
-        <li><a href="products.html#virgin-coco-oil">Virgin Coco Oil</a></li><li><a href="products.html">View all</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Contact</h4><address>
-        Cagayan de Oro City<br>Northern Mindanao, Philippines<br><br>
-        <a href="mailto:trunk2gold@gmail.com">trunk2gold@gmail.com</a><br>+63 917 XXX XXXX
-      </address></div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2025 Trunk to Gold (T2G). All rights reserved.</span>
-      <span>Made in the Philippines</span>
+      <span>&copy; T2G Trunk to Gold Copyright 2025</span>
+      <div class="footer-social"><a href="#">f</a><a href="#">ig</a><a href="#">tt</a></div>
     </div>
   </div>
 </footer>
